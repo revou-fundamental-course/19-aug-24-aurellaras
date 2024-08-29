@@ -1,0 +1,224 @@
+html{
+    scroll-padding:60px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    background-color: #e2dbc4;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto; 
+}
+
+.container table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.container td {
+    text-align: center;
+}
+
+.container td:first-child {
+    width: 20%;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image-container {
+    flex: 0 0 30%;
+    margin-right: 20px; 
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.achievement h2 {
+    text-align: center;
+}
+
+.our-facilitation h2{
+    text-align: center;
+}
+
+.facilities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.facility {
+    text-align: center;
+}
+
+.facility img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.message-us .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-us label {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.centered-titles {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centered-titles h1 {
+    margin-bottom: 10px;
+}
+
+header, footer{
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #c6a476;
+}
+
+header nav ul{
+    margin:0px;
+    padding:0px;
+}
+
+footer div p{
+    margin:0px;
+}
+
+header{
+    margin-bottom: 35px;
+}
+
+header nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    margin-right:15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul li a:hover{
+    border-bottom: 3px solid whitesmoke;
+}
+
+.container{
+    width:75%;
+    margin:auto;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: sticky;
+    top:0;
+}
+
+footer div p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+table{
+    width: 90%;
+}
+
+footer{
+    margin-top:30px;
+}
+
+progress{
+    width: 250px;
+    background-color: whitesmoke;
+}
+
+progress::-webkit-progress-bar{
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+progress::-webkit-progress-value{
+    border-radius: 10px;
+    background-color: rgb(19, 114, 130);
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .image-container {
+        flex: none;
+        width: 100%;
+        margin-right: 0; 
+        margin-bottom: 20px;
+    }
+
+    .facilities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .message-us label {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .facilities {
+        grid-template-columns: 1fr;
+    }
+
+    .message-us label {
+        display: block;
+        width: 100%; 
+        margin-bottom: 5px;
+    }
+
+    .message-us input,
+    .message-us textarea {
+        width: 100%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    header nav ul li a {
+        margin-right: 0;
+    }
+}
